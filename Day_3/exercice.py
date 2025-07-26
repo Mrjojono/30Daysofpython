@@ -112,7 +112,7 @@ if type("«10»") == type(r):
 else:
     print("ils on un type differents")
 
-if int('9.8') == 10 :
+if int(9.8) == 10 :
     print('int(9.8) est egale a 10')
 else:
     print('int(9.8) est differents  de 10')
@@ -121,5 +121,19 @@ heure = int(input("entrer les heures:"))
 taux = int(input("entrer le taux par heure"))
 
 print(f"votre gain hebdomadaire est {taux*heure}")
+
+nbrAnnée = int(input("entrer le nombre d'année que vous avez vecu: "))
+print(f"vous vivez pendant {nbrAnnée*3153600000} de secondes")
+
+data = [
+    [1, 1, 1, 1, 1],
+    [1, 2, 1, 2, 4],
+    [8, 3, 1, 3, 9, 27],
+    [4, 1, 4, 1, 6, 64],
+    [5, 1, 5, 25, 125]
+]
+
+for ligne in data:
+    print(' '.join(str(x) for x in ligne))
 
 exit()
